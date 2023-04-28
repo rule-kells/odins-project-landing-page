@@ -4,16 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <title>Landing Page</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header bg bg-dark">
+      <nav class="nav">
         <a href="./index.html">Header Logo</a>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">About</a></li>
+          <li class="nav__item"><a href="#">Blog</a></li>
         </ul>
       </nav>
       <div class="hero">
@@ -23,7 +31,7 @@
             This website has some subtext that goes here under the main title.
             It's a smaller font and the color is lower contrast
           </p>
-          <button></button>
+          <a href="#">Sign up</a>
         </div>
         <div class="hero__img">
           <img src="" alt="" />
@@ -31,19 +39,30 @@
       </div>
     </header>
 
-    <main>
+    <main class="main bg">
       <h2>Some Random Information</h2>
 
       <div></div>
 
-      <blockquote></blockquote>
+      <figure class="bg bg-light">
+        <blockquote>
+          <p>
+            This is an inspiriting quote, or a testimonial from a customer.
+            Maybe it's just filling up space, or maybe people will actually read
+            it. Who knows? All I know is that it looks nice.
+          </p>
+        </blockquote>
+        <figcaption>-Thor,<cite> God of Thunder</cite></figcaption>
+      </figure>
 
-      <h3>Call to action! It's time!</h3>
-      <p>Sign up for our product by clicking that button right over there!</p>
-      <button>sign up</button>
+      <div class="bg bg-accent">
+        <h3>Call to action! It's time!</h3>
+        <p>Sign up for our product by clicking that button right over there!</p>
+        <a href="#">sign up</a>
+      </div>
     </main>
 
-    <footer>
+    <footer class="bg bg-dark">
       <p><small>Copyright &copy; The Odin Project 2023</small></p>
     </footer>
   </body>
