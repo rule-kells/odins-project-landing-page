@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -16,53 +16,91 @@
   </head>
   <body>
     <header class="header bg bg-dark">
-      <nav class="nav">
-        <a href="./index.html">Header Logo</a>
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#">Home</a></li>
-          <li class="nav__item"><a href="#">About</a></li>
-          <li class="nav__item"><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-      <div class="hero">
-        <div class="hero__content">
-          <h1>This Website is awesome</h1>
-          <p>
-            This website has some subtext that goes here under the main title.
-            It's a smaller font and the color is lower contrast
-          </p>
-          <a href="#">Sign up</a>
-        </div>
-        <div class="hero__img">
-          <img src="" alt="" />
+      <div class="container">
+        <nav class="nav">
+          <a href="./index.html">Header Logo</a>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#">Home</a></li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item"><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="hero">
+          <div class="hero__content flow">
+            <h1>This Website is awesome</h1>
+            <p>
+              This website has some subtext that goes here under the main title.
+              It's a smaller font and the color is lower contrast
+            </p>
+            <a class="btn btn-primary" href="#">Sign up</a>
+          </div>
+          <div class="hero__img">
+            <img src="./img/hero-img.webp" alt="" />
+          </div>
         </div>
       </div>
     </header>
 
     <main class="main bg">
-      <h2>Some Random Information</h2>
+      <div class="information">
+        <h2 class="information-title">Some Random Information.</h2>
+        <div class="information__card--wrapper">
+          <div class="information__card">
+            <div class="information__img">
+              <img src="./img/laptop.webp" alt="" />
+            </div>
+            <p>this is some subtext under an illustration or image</p>
+          </div>
+          <div class="information__card">
+            <div class="information__img">
+              <img src="./img/camera.png" alt="" />
+            </div>
+            <p>this is some subtext under an illustration or image</p>
+          </div>
+          <div class="information__card">
+            <div class="information__img">
+              <img src="./img/pen-tablet.jpg" alt="" />
+            </div>
+            <p>this is some subtext under an illustration or image</p>
+          </div>
+          <div class="information__card">
+            <div class="information__img">
+              <img src="./img/writing.webp" alt="" />
+            </div>
+            <p>this is some subtext under an illustration or image</p>
+          </div>
+        </div>
+      </div>
 
-      <div></div>
+      <div class="testimonial bg bg-light">
+        <figure class="testimonial__content">
+          <blockquote class="testimonial__quote">
+            <p class="fs-heading-m">
+              This is an inspiriting quote, or a testimonial from a customer.
+              Maybe it's just filling up space, or maybe people will actually
+              read it. Who knows? All I know is that it looks nice.
+            </p>
+          </blockquote>
+          <figcaption class="author fs-heading-s">
+            -Thor,<cite> God of Thunder</cite>
+          </figcaption>
+        </figure>
+      </div>
 
-      <figure class="bg bg-light">
-        <blockquote>
-          <p>
-            This is an inspiriting quote, or a testimonial from a customer.
-            Maybe it's just filling up space, or maybe people will actually read
-            it. Who knows? All I know is that it looks nice.
-          </p>
-        </blockquote>
-        <figcaption>-Thor,<cite> God of Thunder</cite></figcaption>
-      </figure>
-
-      <div class="bg bg-accent">
-        <h3>Call to action! It's time!</h3>
-        <p>Sign up for our product by clicking that button right over there!</p>
-        <a href="#">sign up</a>
+      <div class="cta">
+        <div class="cta__content bg bg-accent">
+          <div class="cta__body">
+            <h3>Call to action! It's time!</h3>
+            <p>
+              Sign up for our product by clicking that button right over there!
+            </p>
+          </div>
+          <a class="btn btn-outline" href="#">sign up</a>
+        </div>
       </div>
     </main>
 
-    <footer class="bg bg-dark">
+    <footer class="footer bg bg-dark">
       <p><small>Copyright &copy; The Odin Project 2023</small></p>
     </footer>
   </body>
